@@ -10,7 +10,7 @@
 
 # Adjustable settings
 CFG_MEMSIZE = "3000"      # max memory for each VM
-CFG_TZ = "US/Pacific"     # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
+CFG_TZ = "UTC"     # timezone, like US/Pacific, US/Eastern, UTC, Europe/Warsaw, etc.
 CFG_IP = "10.211.54.10"   # private IP address
 
 # if local Debian proxy configured (DEB_CACHE_HOST), install and configure the proxy client
@@ -47,7 +47,7 @@ apt-get install vim curl zip unzip git python-pip -y
 apt-get install openjdk-7-jre -y
 
 # install cassandra 
-sudo apt-get install dsc21 -y
+sudo apt-get install dsc21 -y --force-yes
 sudo service cassandra status
 SCRIPT
 
